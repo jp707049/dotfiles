@@ -13,4 +13,12 @@ return require("packer").startup(function(use)
 
   -- Treesitter
   use "nvim-treesitter/nvim-treesitter"
+
+  -- gitsigns
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
 end)
