@@ -13,7 +13,7 @@ window:
   startup_mode: Windowed
 
 font:
-  size: 18
+  size: 22
 
 # Colors (Gruvbox dark)
 colors:
