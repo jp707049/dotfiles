@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 local function map(mode, lhs, rhs, opts)
   local options = { noremap = true, silent = true }
   if opts then
@@ -20,3 +22,5 @@ map("n", "<leader><leader>", "<c-^>")
 
 -- quick save
 map("n", "<leader>w", ":w<CR>")
+-- quick exit
+map("n", "<leader>x", ":q!<CR>")
