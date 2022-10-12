@@ -14,3 +14,9 @@ map("", "<right>", "<nop>")
 
 -- Clear search highlight
 map("n", "<leader>nh", ":nohl<CR>")
+
+-- toggle between buffers
+map("n", "<leader><leader>", "<c-^>")
+
+-- quick save
+map("n", "<leader>w", ":w<CR>")
