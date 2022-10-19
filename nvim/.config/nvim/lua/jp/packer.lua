@@ -3,7 +3,7 @@ return require("packer").startup(function(use)
   use "wbthomason/packer.nvim"
 
   -- Colorscheme
-  use "olimorris/onedarkpro.nvim"
+  use "RRethy/nvim-base16"
 
   -- Statusline
   use {
