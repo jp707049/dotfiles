@@ -9,10 +9,10 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Disable arrow keys
-map("", "<up>", "<nop>")
-map("", "<down>", "<nop>")
-map("", "<left>", "<nop>")
-map("", "<right>", "<nop>")
+--map("", "<up>", "<nop>")
+--map("", "<down>", "<nop>")
+--map("", "<left>", "<nop>")
+--map("", "<right>", "<nop>")
 
 -- Clear search highlight
 map("n", "<leader>nh", ":nohl<CR>")
