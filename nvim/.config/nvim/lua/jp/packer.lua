@@ -5,6 +5,7 @@ return require("packer").startup(function(use)
   -- Colorscheme
   use "RRethy/nvim-base16"
   use { "catppuccin/nvim", as = "catppuccin" }
+  use { "ellisonleao/gruvbox.nvim" }
 
   -- Statusline
   use {
