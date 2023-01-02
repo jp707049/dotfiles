@@ -1,39 +1,67 @@
-vim.opt.guicursor = ""
+local g = vim.g       -- Global variables
+local opt = vim.opt   -- Set options (global/buffer/windows-scoped)
 
-vim.opt.showmode = false
+opt.mouse = "a"
+opt.clipboard = "unnamedplus"
+opt.swapfile = false
+opt.completeopt = "menuone,noinsert,noselect"
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
+opt.number = true
+opt.relativenumber = true
+opt.showmode = false
+opt.guicursor = ""
+opt.wrap = false
+opt.scrolloff = 8
+opt.signcolumn = "yes"
 
-vim.opt.errorbells = false
+opt.splitright = true
+opt.splitbelow = true
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+opt.ignorecase = true
+opt.smartcase = true
+opt.termguicolors = true
+opt.laststatus=3
 
-vim.opt.smartindent = true
+opt.expandtab = true
+opt.shiftwidth = 4
+opt.tabstop = 4
+opt.smartindent = true
 
-vim.opt.wrap = false
+-- ms to wait for trigger an event
+opt.updatetime = 400 
 
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undofile = true
+-- Disable nvim intro
+opt.shortmess:append "sI"
 
-vim.opt.hlsearch = true
-vim.opt.incsearch = true
+-- Disable builtin plugins
+local disabled_built_ins = {
+  "2html_plugin",
+  "getscript",
+  "getscriptPlugin",
+  "gzip",
+  "logipat",
+  "netrw",
+  "netrwPlugin",
+  "netrwSettings",
+  "netrwFileHandlers",
+  "matchit",
+  "tar",
+  "tarPlugin",
+  "rrhelper",
+  "spellfile_plugin",
+  "vimball",
+  "vimballPlugin",
+  "zip",
+  "zipPlugin",
+  "tutor",
+  "rplugin",
+  "synmenu",
+  "optwin",
+  "compiler",
+  "bugreport",
+  "ftplugin",
+}
 
-vim.opt.termguicolors = true
-
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
-
-vim.opt.cmdheight = 1
-
--- Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
--- delays and poor user experience.
-vim.opt.updatetime = 50
-
--- Don't pass messages to |ins-completion-menu|.
-vim.opt.shortmess:append("c")
+for _, plugin in pairs(disabled_built_ins) do
+  g["loaded_" .. plugin] = 1
+end
