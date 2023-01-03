@@ -3,7 +3,7 @@ return require("packer").startup(function(use)
   use { "wbthomason/packer.nvim" }
   
   -- Comminuty gruvbox
-  use { "gruvbox-community/gruvbox" }
+  use { "RRethy/nvim-base16" }
 
   -- statusline
   use {
