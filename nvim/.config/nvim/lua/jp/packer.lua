@@ -40,6 +40,8 @@ return require("packer").startup(function(use)
       "saadparwaiz1/cmp_luasnip",
     },
   }
+  
+  use { "ray-x/lsp_signature.nvim" }
 
   use {
     "nvim-telescope/telescope.nvim", tag = "0.1.0",
