@@ -1,9 +1,10 @@
 return require("packer").startup(function(use)
   -- Packer can manage itself
   use { "wbthomason/packer.nvim" }
-  
+
   -- Comminuty gruvbox
   use { "RRethy/nvim-base16" }
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- statusline
   use {
