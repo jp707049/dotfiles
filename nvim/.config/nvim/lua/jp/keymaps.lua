@@ -31,3 +31,6 @@ map("n", "<leader>w", ":w<CR>")
 
 -- Fast save and quit
 map("n", "<leader>wq", ":wq!<CR>")
+
+-- Toggle between buffers
+map("n", "<leader><leader>", "<C-^>")
