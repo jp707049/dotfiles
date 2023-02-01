@@ -50,6 +50,9 @@ return require("packer").startup(function(use)
     }
   }
 
+  -- LSP Status
+  use { "j-hui/fidget.nvim" }
+
   use {
     "nvim-telescope/telescope.nvim", tag = "0.1.0",
     requires = { {"nvim-lua/plenary.nvim"} }
