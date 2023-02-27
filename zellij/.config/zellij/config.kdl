@@ -188,7 +188,7 @@ plugins {
 //    - true
 //    - false (Default)
 //
-// simplified_ui true
+simplified_ui true
 
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
@@ -202,40 +202,21 @@ plugins {
 //
 // pane_frames true
 
-// Define color themes for Zellij
-// For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
-// Once these themes are defined, one of them should to be selected in the "theme" section of this file
-//
-themes {
-    molokai-dark {
-        fg 248 248 240
-        bg 27 29 30
-        black 0 0 0
-        red 255 0 0
-        green 0 140 0
-        yellow 255 255 0
-        blue 102 217 239
-        magenta 174 129 255
-        cyan 0 255 255
-        white 255 255 255
-        orange 253 151 31
-    }
-}
-
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "molokai-dark"
+theme "default"
 
 // The name of the default layout to load on startup
 // Default: "default"
 //
-// default_layout "compact"
+default_layout "compact"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
 //
 // default_mode "locked"
+default_mode "normal"
 
 // Toggle enabling the mouse mode.
 // On certain configurations, or terminals this could
@@ -263,6 +244,7 @@ mouse_mode true
 // copy_command "xclip -selection clipboard" // x11
 // copy_command "wl-copy"                    // wayland
 // copy_command "pbcopy"                     // osx
+copy_command "pbcopy"
 
 // Choose the destination for copied text
 // Allows using the primary selection buffer (on x11/wayland) instead of the system clipboard.
@@ -272,6 +254,7 @@ mouse_mode true
 //   - primary
 //
 // copy_clipboard "primary"
+copy_clipboard "system"
 
 // Enable or disable automatic copy (and clear) of selection when releasing mouse
 // Default: true

@@ -5,6 +5,7 @@ return require("packer").startup(function(use)
   -- Comminuty gruvbox
   use { "RRethy/nvim-base16" }
   use { "catppuccin/nvim", as = "catppuccin" }
+  use { "shaunsingh/nord.nvim" }
 
   -- statusline
   use {
