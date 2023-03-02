@@ -111,25 +111,25 @@ keybinds {
         bind "d" { Detach; }
     }
     tmux {
-        bind "[" { SwitchToMode "Scroll"; }
-        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
-        bind "\"" { NewPane "Down"; SwitchToMode "Normal"; }
-        bind "%" { NewPane "Right"; SwitchToMode "Normal"; }
-        bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
-        bind "c" { NewTab; SwitchToMode "Normal"; }
-        bind "," { SwitchToMode "RenameTab"; }
-        bind "p" { GoToPreviousTab; SwitchToMode "Normal"; }
-        bind "n" { GoToNextTab; SwitchToMode "Normal"; }
-        bind "Left" { MoveFocus "Left"; SwitchToMode "Normal"; }
-        bind "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
-        bind "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
-        bind "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
-        bind "h" { MoveFocus "Left"; SwitchToMode "Normal"; }
-        bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }
-        bind "j" { MoveFocus "Down"; SwitchToMode "Normal"; }
-        bind "k" { MoveFocus "Up"; SwitchToMode "Normal"; }
-        bind "o" { FocusNextPane; }
-        bind "d" { Detach; }
+    //    bind "[" { SwitchToMode "Scroll"; }
+    //    bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
+    //    bind "\"" { NewPane "Down"; SwitchToMode "Normal"; }
+    //    bind "%" { NewPane "Right"; SwitchToMode "Normal"; }
+    //    bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
+    //    bind "c" { NewTab; SwitchToMode "Normal"; }
+    //   bind "," { SwitchToMode "RenameTab"; }
+    //    bind "p" { GoToPreviousTab; SwitchToMode "Normal"; }
+    //    bind "n" { GoToNextTab; SwitchToMode "Normal"; }
+    //    bind "Left" { MoveFocus "Left"; SwitchToMode "Normal"; }
+    //    bind "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
+    //    bind "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
+    //    bind "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
+    //    bind "h" { MoveFocus "Left"; SwitchToMode "Normal"; }
+    //    bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }
+    //    bind "j" { MoveFocus "Down"; SwitchToMode "Normal"; }
+    //    bind "k" { MoveFocus "Up"; SwitchToMode "Normal"; }
+    //    bind "o" { FocusNextPane; }
+    //    bind "d" { Detach; }
     }
     shared_except "locked" {
         bind "Ctrl g" { SwitchToMode "Locked"; }
@@ -193,7 +193,7 @@ simplified_ui true
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 //
-// default_shell "fish"
+// default_shell "/bin/zsh"
 
 // Toggle between having pane frames around the panes
 // Options:
@@ -201,6 +201,26 @@ simplified_ui true
 //   - false
 //
 // pane_frames true
+
+// Define color themes for Zellij
+// For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
+// Once these themes are defined, one of them should to be selected in the "theme" section of this file
+//
+themes {
+    default {
+        fg "#afb4c3"
+        bg "#272b30"
+        black "#272b30"
+        red "#cc6666"
+        green "#bdb968"
+        yellow "#f0c674"
+        blue "#81a2be"
+        magenta "#b08cba"
+        cyan "#7fb2c8"
+        white "#afb4c3"
+        orange "#de935f"
+    }
+}
 
 // Choose the theme that is specified in the themes section.
 // Default: default
@@ -216,7 +236,6 @@ default_layout "compact"
 // Default: normal
 //
 // default_mode "locked"
-default_mode "normal"
 
 // Toggle enabling the mouse mode.
 // On certain configurations, or terminals this could
@@ -225,7 +244,7 @@ default_mode "normal"
 //   - true (default)
 //   - false
 //
-mouse_mode true
+mouse_mode false
 
 // Configure the scroll back buffer size
 // This is the number of lines zellij stores for each pane in the scroll back
@@ -244,7 +263,6 @@ mouse_mode true
 // copy_command "xclip -selection clipboard" // x11
 // copy_command "wl-copy"                    // wayland
 // copy_command "pbcopy"                     // osx
-copy_command "pbcopy"
 
 // Choose the destination for copied text
 // Allows using the primary selection buffer (on x11/wayland) instead of the system clipboard.
@@ -254,7 +272,6 @@ copy_command "pbcopy"
 //   - primary
 //
 // copy_clipboard "primary"
-copy_clipboard "system"
 
 // Enable or disable automatic copy (and clear) of selection when releasing mouse
 // Default: true
@@ -264,7 +281,7 @@ copy_on_select false
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-// scrollback_editor "/usr/bin/vim"
+scrollback_editor "nvim"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
