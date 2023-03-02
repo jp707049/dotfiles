@@ -6,7 +6,7 @@ window:
     x: 10
     y: 10
   decorations: "buttonless"
-  startup_mode: SimpleFullscreen
+  startup_mode: Maximized
   scrolling:
     history: 1000
 
