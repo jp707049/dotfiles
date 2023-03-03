@@ -15,18 +15,78 @@ font:
     family: Hack Nerd Font Mono
   size: 22
 
-# Colors (Tomorrow Night)
 colors:
+  name: Material
+  author: ""
   primary:
-    background: "#272b30"
-    foreground: "#afb4c3"
-
+    background: "#212121"
+    foreground: "#EEFFFF"
+  cursor:
+    text: "#212121"
+    cursor: "#EEFFFF"
   normal:
-    black:   "#272b30"
-    red:     "#cc6666"
-    green:   "#bdb968"
-    yellow:  "#f0c674"
-    blue:    "#81a2be"
-    magenta: "#b08cba"
-    cyan:    "#7fb2c8"
-    white:   "#afb4c3"
+    black: "#212121"
+    red: "#F07178"
+    green: "#C3E88D"
+    yellow: "#FFCB6B"
+    blue: "#82AAFF"
+    magenta: "#C792EA"
+    cyan: "#89DDFF"
+    white: "#EEFFFF"
+  bright:
+    black: "#4A4A4A"
+    red: "#F78C6C"
+    green: "#303030"
+    yellow: "#353535"
+    blue: "#B2CCD6"
+    magenta: "#EEFFFF"
+    cyan: "#FF5370"
+    white: "#FFFFFF"
+
+# Material Darker Hex colors
+#scheme: "Material Darker"
+#author: "Nate Peterson"
+#base00: "212121"
+#base01: "303030"
+#base02: "353535"
+#base03: "4A4A4A"
+#base04: "B2CCD6"
+#base05: "EEFFFF"
+#base06: "EEFFFF"
+#base07: "FFFFFF"
+#base08: "F07178"
+#base09: "F78C6C"
+#base0A: "FFCB6B"
+#base0B: "C3E88D"
+#base0C: "89DDFF"
+#base0D: "82AAFF"
+#base0E: "C792EA"
+#base0F: "FF5370"
+# Conversion to color names
+# # Base16 {{scheme-name}} - alacritty color config
+# {{scheme-author}}
+#  primary:
+#    background: '0x{{base00-hex}}'
+#    foreground: '0x{{base05-hex}}'
+#  cursor:
+#    text: '0x{{base00-hex}}'
+#    cursor: '0x{{base05-hex}}'
+#  normal:
+#    black:   '0x{{base00-hex}}'
+#    red:     '0x{{base08-hex}}'
+#    green:   '0x{{base0B-hex}}'
+#    yellow:  '0x{{base0A-hex}}'
+#    blue:    '0x{{base0D-hex}}'
+#    magenta: '0x{{base0E-hex}}'
+#    cyan:    '0x{{base0C-hex}}'
+#    white:   '0x{{base05-hex}}'
+#  bright:
+#    black:   '0x{{base03-hex}}'
+#    red:     '0x{{base09-hex}}'
+#    green:   '0x{{base01-hex}}'
+#    yellow:  '0x{{base02-hex}}'
+#    blue:    '0x{{base04-hex}}'
+#    magenta: '0x{{base06-hex}}'
+#    cyan:    '0x{{base0F-hex}}'
+#    white:   '0x{{base07-hex}}'
+
