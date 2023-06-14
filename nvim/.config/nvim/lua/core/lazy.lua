@@ -22,12 +22,22 @@ end
 lazy.setup({
   spec = {
     -- Colorschemes
+--    {
+--      'RRethy/nvim-base16',
+--      lazy = false,
+--      priority = 1000,
+--      config = function ()
+--        vim.cmd('colorscheme base16-default-dark')
+--      end
+--    },
+
     {
-      'RRethy/nvim-base16',
+      'Everblush/nvim',
+      name = 'everblush',
       lazy = false,
       priority = 1000,
       config = function ()
-        vim.cmd('colorscheme base16-default-dark')
+        vim.cmd('colorscheme everblush')
       end
     },
 
