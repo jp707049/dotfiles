@@ -15,21 +15,19 @@ font:
     family: FiraCode Nerd Font Mono
   size: 22
 
-# Colors (Base16 Default Dark)
 colors:
   # Default colors
   primary:
     background: '0x141b1e'
     foreground: '0xdadada'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x141b1e'
+    text: '0xdadada'
     cursor: '0xdadada'
 
   # Normal colors
   normal:
-    black:   '0x141b1e'
+    black:   '0x232a2d'
     red:     '0xe57474'
     green:   '0x8ccf7e'
     yellow:  '0xe5c76b'
