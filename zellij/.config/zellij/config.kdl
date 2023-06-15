@@ -40,6 +40,7 @@ keybinds {
     move {
         bind "Ctrl h" { SwitchToMode "Normal"; }
         bind "n" "Tab" { MovePane; }
+        bind "p" { MovePaneBackwards; }
         bind "h" "Left" { MovePane "Left"; }
         bind "j" "Down" { MovePane "Down"; }
         bind "k" "Up" { MovePane "Up"; }
@@ -111,25 +112,27 @@ keybinds {
         bind "d" { Detach; }
     }
     tmux {
-    //    bind "[" { SwitchToMode "Scroll"; }
-    //    bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
-    //    bind "\"" { NewPane "Down"; SwitchToMode "Normal"; }
-    //    bind "%" { NewPane "Right"; SwitchToMode "Normal"; }
-    //    bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
-    //    bind "c" { NewTab; SwitchToMode "Normal"; }
-    //   bind "," { SwitchToMode "RenameTab"; }
-    //    bind "p" { GoToPreviousTab; SwitchToMode "Normal"; }
-    //    bind "n" { GoToNextTab; SwitchToMode "Normal"; }
-    //    bind "Left" { MoveFocus "Left"; SwitchToMode "Normal"; }
-    //    bind "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
-    //    bind "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
-    //    bind "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
-    //    bind "h" { MoveFocus "Left"; SwitchToMode "Normal"; }
-    //    bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }
-    //    bind "j" { MoveFocus "Down"; SwitchToMode "Normal"; }
-    //    bind "k" { MoveFocus "Up"; SwitchToMode "Normal"; }
-    //    bind "o" { FocusNextPane; }
-    //    bind "d" { Detach; }
+        bind "[" { SwitchToMode "Scroll"; }
+        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
+        bind "\"" { NewPane "Down"; SwitchToMode "Normal"; }
+        bind "%" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
+        bind "c" { NewTab; SwitchToMode "Normal"; }
+        bind "," { SwitchToMode "RenameTab"; }
+        bind "p" { GoToPreviousTab; SwitchToMode "Normal"; }
+        bind "n" { GoToNextTab; SwitchToMode "Normal"; }
+        bind "Left" { MoveFocus "Left"; SwitchToMode "Normal"; }
+        bind "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }
+        bind "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
+        bind "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
+        bind "h" { MoveFocus "Left"; SwitchToMode "Normal"; }
+        bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }
+        bind "j" { MoveFocus "Down"; SwitchToMode "Normal"; }
+        bind "k" { MoveFocus "Up"; SwitchToMode "Normal"; }
+        bind "o" { FocusNextPane; }
+        bind "d" { Detach; }
+        bind "Space" { NextSwapLayout; }
+        bind "x" { CloseFocus; SwitchToMode "Normal"; }
     }
     shared_except "locked" {
         bind "Ctrl g" { SwitchToMode "Locked"; }
@@ -141,6 +144,8 @@ keybinds {
         bind "Alt k" "Alt Up" { MoveFocus "Up"; }
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
+        bind "Alt [" { PreviousSwapLayout; }
+        bind "Alt ]" { NextSwapLayout; }
     }
     shared_except "normal" "locked" {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
@@ -188,12 +193,12 @@ plugins {
 //    - true
 //    - false (Default)
 //
-simplified_ui true
+// simplified_ui true
 
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 //
-// default_shell "/bin/zsh"
+// default_shell "fish"
 
 // Toggle between having pane frames around the panes
 // Options:
@@ -202,35 +207,42 @@ simplified_ui true
 //
 // pane_frames true
 
+// Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
+// Options:
+//   - true (default)
+//   - false
+//
+// auto_layout true
+
 // Define color themes for Zellij
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
 themes {
-    default {
-        fg "#212121"
-        bg "#EEFFFF"
-        black "#212121"
-        red "#F07178"
-        green "#C3E88D"
-        yellow "#FFCB6B"
-        blue "#82AAFF"
-        magenta "#C792EA"
-        cyan "#89DDFF"
-        white "#EEFFFF"
-	orange "#F78C6C"
+    everblush {
+        fg 218 218 218
+        bg 20 27 30
+        red 229 116 116
+        green 140 207 126
+        yellow 229 199 107
+        blue 103 176 232
+        magenta 196 127 213
+        orange 229 148 116
+        cyan 108 191 191
+        black 20 27 30
+        white 179 185 184
     }
 }
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "default"
+theme "everblush"
 
 // The name of the default layout to load on startup
 // Default: "default"
 //
-default_layout "compact"
+// default_layout "compact"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
@@ -262,7 +274,7 @@ mouse_mode true
 //
 // copy_command "xclip -selection clipboard" // x11
 // copy_command "wl-copy"                    // wayland
-// copy_command "pbcopy"                     // osx
+copy_command "pbcopy"                        // osx
 
 // Choose the destination for copied text
 // Allows using the primary selection buffer (on x11/wayland) instead of the system clipboard.
@@ -271,17 +283,17 @@ mouse_mode true
 //   - system (default)
 //   - primary
 //
-// copy_clipboard "primary"
+copy_clipboard "system"
 
 // Enable or disable automatic copy (and clear) of selection when releasing mouse
 // Default: true
 //
-copy_on_select false
+copy_on_select true
 
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-scrollback_editor "nvim"
+// scrollback_editor "/opt/brew/bin/nvim"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
