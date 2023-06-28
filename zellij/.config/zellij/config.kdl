@@ -220,16 +220,16 @@ plugins {
 //
 themes {
     gruvbox-dark {
-        fg 213 196 161
+        fg 235 219 178
         bg 40 40 40
-        black 60 56 54
+        black 40 40 40
         red 204 36 29
         green 152 151 26
         yellow 215 153 33
         blue 69 133 136
         magenta 177 98 134
         cyan 104 157 106
-        white 251 241 199
+        white 168 153 132
         orange 214 93 14
     }
 }
@@ -256,7 +256,7 @@ theme "gruvbox-dark"
 //   - true (default)
 //   - false
 //
-mouse_mode true
+mouse_mode false
 
 // Configure the scroll back buffer size
 // This is the number of lines zellij stores for each pane in the scroll back
@@ -288,7 +288,7 @@ copy_clipboard "system"
 // Enable or disable automatic copy (and clear) of selection when releasing mouse
 // Default: true
 //
-copy_on_select true
+copy_on_select false
 
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
