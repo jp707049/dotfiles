@@ -32,12 +32,12 @@ lazy.setup({
 --    },
 
     {
-      'Everblush/nvim',
-      name = 'everblush',
+      'gruvbox-community/gruvbox',
       lazy = false,
       priority = 1000,
       config = function ()
-        vim.cmd('colorscheme everblush')
+        vim.o.background = 'dark'
+        vim.cmd('colorscheme gruvbox')
       end
     },
 

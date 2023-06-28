@@ -22,9 +22,12 @@ opt.ignorecase = true       -- Ignore case letters when search
 opt.smartcase = true        -- Ignore lowercase for the whole pattern
 opt.linebreak = true        -- Wrap on word boundary
 opt.termguicolors = true    -- Enable 24-bit RGB colors
-opt.laststatus=3            -- Set global statusline
+opt.laststatus= 3           -- Set global statusline
 opt.showmode = false				-- Disable showing mode in command line
-opt.signcolumn = 'yes'
+opt.signcolumn = 'yes'      -- set sign column to display warn/error 
+opt.cmdheight = 0
+opt.cursorline = true
+opt.guicursor = 'n-v-c-i:block'
 
 -----------------------------------------------------------
 -- Tabs, indent
