@@ -32,12 +32,12 @@ lazy.setup({
 --    },
 
     {
-      'gruvbox-community/gruvbox',
+      'srcery-colors/srcery-vim',
       lazy = false,
       priority = 1000,
       config = function ()
-        vim.o.background = 'dark'
-        vim.cmd('colorscheme gruvbox')
+        vim.g.srcery_inverse = 0
+        vim.cmd('colorscheme srcery')
       end
     },
 
