@@ -22,22 +22,12 @@ end
 lazy.setup({
   spec = {
     -- Colorschemes
---    {
---      'RRethy/nvim-base16',
---      lazy = false,
---      priority = 1000,
---      config = function ()
---        vim.cmd('colorscheme base16-default-dark')
---      end
---    },
-
     {
-      'srcery-colors/srcery-vim',
+      'RRethy/nvim-base16',
       lazy = false,
       priority = 1000,
       config = function ()
-        vim.g.srcery_inverse = 0
-        vim.cmd('colorscheme srcery')
+        vim.cmd('colorscheme base16-tomorrow-night')
       end
     },
 
@@ -102,6 +92,7 @@ lazy.setup({
     -- LSP Status
     {
       'j-hui/fidget.nvim',
+      tag = 'legacy',
       config = function()
         require('fidget').setup{}
       end

@@ -83,10 +83,10 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 
 -- LSP settings (for overriding per client)
---local handlers =  {
---  ["textDocument/hover"] =  vim.lsp.with(vim.lsp.handlers.hover, {border = "rounded"}),
---  ["textDocument/signatureHelp"] =  vim.lsp.with(vim.lsp.handlers.signature_help, {border = "rounded" }),
---}
+local handlers =  {
+  ["textDocument/hover"] =  vim.lsp.with(vim.lsp.handlers.hover, {border = "rounded"}),
+  ["textDocument/signatureHelp"] =  vim.lsp.with(vim.lsp.handlers.signature_help, {border = "rounded" }),
+}
 
 -- Define `root_dir` when needed
 -- See: https://github.com/neovim/nvim-lspconfig/issues/320
@@ -106,7 +106,7 @@ for _, lsp in ipairs(servers) do
     on_attach = on_attach,
     root_dir = root_dir,
     capabilities = capabilities,
-    --handlers = handlers,
+    handlers = handlers,
     flags = {
       -- default in neovim 0.7+
       debounce_text_changes = 150,
