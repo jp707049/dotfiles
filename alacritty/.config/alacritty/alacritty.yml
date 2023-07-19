@@ -6,8 +6,8 @@ shell:
 
 window:
   padding:
-    x: 10
-    y: 10
+    x: 0
+    y: 0
   decorations: "buttonless"
   startup_mode: Maximized
   scrolling:
@@ -15,7 +15,7 @@ window:
 
 font:
   normal:
-    family: FiraCode Nerd Font Mono
+    family: NotoSansM Nerd Font
   size: 22
 
 # Colors (Tomorrow Night)
