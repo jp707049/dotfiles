@@ -16,7 +16,7 @@ window:
 font:
   normal:
     family: NotoSansM Nerd Font
-  size: 18
+  size: 20
 
 # Colors (Tomorrow Night)
 colors:
