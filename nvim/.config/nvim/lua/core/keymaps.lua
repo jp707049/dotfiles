@@ -17,6 +17,9 @@ vim.g.mapleader = ' '
 -- Neovim shortcuts
 -----------------------------------------------------------
 
+-- <leader><leader> toggles between buffers
+map('n', '<leader><leader>', '<c-^>')
+
 -- Disable arrow keys
 map('', '<up>', '<nop>')
 map('', '<down>', '<nop>')
