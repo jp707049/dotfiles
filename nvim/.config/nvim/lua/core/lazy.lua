@@ -27,7 +27,7 @@ lazy.setup({
       lazy = false,
       priority = 1000,
       config = function ()
-        vim.cmd('colorscheme base16-tomorrow-night')
+        vim.cmd('colorscheme base16-gruvbox-dark-hard')
       end
     },
 
