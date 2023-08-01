@@ -72,6 +72,8 @@ vim.diagnostic.config({
     header = "",
     prefix = "",
 	},
+  signs = false,
+  underline = true,
 })
 
 -- Mappings.
@@ -84,8 +86,8 @@ vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 
 -- LSP settings (for overriding per client)
 local handlers =  {
-  ["textDocument/hover"] =  vim.lsp.with(vim.lsp.handlers.hover, {border = "rounded"}),
-  ["textDocument/signatureHelp"] =  vim.lsp.with(vim.lsp.handlers.signature_help, {border = "rounded" }),
+  ["textDocument/hover"] =  vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded"}),
+  ["textDocument/signatureHelp"] =  vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" }),
 }
 
 -- Define `root_dir` when needed
@@ -103,6 +105,13 @@ local servers = { 'rust_analyzer', 'lua_ls', 'pyright' }
 -- Call setup
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
+    settings = {
+      Lua = {
+        diagnostics = {
+          globals = { 'vim' }
+        }
+      }
+    },
     on_attach = on_attach,
     root_dir = root_dir,
     capabilities = capabilities,

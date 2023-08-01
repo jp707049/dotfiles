@@ -37,7 +37,7 @@ lazy.setup({
     -- Git labels
     {
       'lewis6991/gitsigns.nvim',
-      lazy = true,
+      lazy = false,
       dependencies = {
         'nvim-lua/plenary.nvim',
         'kyazdani42/nvim-web-devicons',
