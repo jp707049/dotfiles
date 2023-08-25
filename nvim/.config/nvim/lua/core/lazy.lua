@@ -23,11 +23,13 @@ lazy.setup({
   spec = {
     -- Colorschemes
     {
-      'RRethy/nvim-base16',
+      --'RRethy/nvim-base16',
+      'catppuccin/nvim',
+      name = "catppuccin",
       lazy = false,
       priority = 1000,
       config = function ()
-        vim.cmd('colorscheme base16-gruvbox-dark-hard')
+        vim.cmd('colorscheme catppuccin-macchiato')
       end
     },
 
