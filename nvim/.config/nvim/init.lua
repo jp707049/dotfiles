@@ -1,10 +1,15 @@
+-- Set <space> as the leader key
+-- See `:help mapleader`
+--  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 -- Import Lua modules
-require('core/lazy')
-require('core/autocmds')
-require('core/keymaps')
-require('core/statusline')
-require('core/options')
-require('lsp/lspconfig')
-require('plugins/indent-blankline')
-require('plugins/nvim-cmp')
-require('plugins/nvim-treesitter')
+require('jp/options')
+require('jp/lazy')
+require('jp/autocmds')
+require('jp/keymaps')
+require('jp/telescope')
+require('jp/lspconfig')
+require('jp/nvim-cmp')
+require('jp/nvim-treesitter')
