@@ -1,5 +1,5 @@
--- clear seach highlight
-vim.keymap.set('n', '<leader>ch', ':nohl<CR>', { noremap=true, silent=true })
+-- toggle between buffers
+vim.keymap.set('n', 'bb', '<c-^>', { noremap=true, silent=true })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
