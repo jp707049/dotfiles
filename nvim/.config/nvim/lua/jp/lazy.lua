@@ -28,7 +28,7 @@ lazy.setup({
       lazy = false, -- make sure we load this during startup if it is your main colorscheme
       priority = 1000, -- make sure to load this before all the other start plugins
       config = function()
-        vim.cmd.colorscheme 'base16-gruvbox-dark-medium'
+        vim.cmd.colorscheme 'base16-gruvbox-dark-hard'
       end,
     },
 
