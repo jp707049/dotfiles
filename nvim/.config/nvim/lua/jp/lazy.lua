@@ -24,12 +24,11 @@ lazy.setup({
   spec = {
     -- Colorscheme:
     {
-      'catppuccin/nvim',
-      name = "catppuccin",
+      'kvrohit/rasmus.nvim',
       priority = 1000,
       lazy = false,
       config = function()
-        vim.cmd.colorscheme 'catppuccin-macchiato'
+        vim.cmd.colorscheme 'rasmus'
       end,
     },
 
@@ -56,7 +55,7 @@ lazy.setup({
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
 
     -- LSP
-    { 
+    {
       'neovim/nvim-lspconfig',
       dependencies = {
         -- Automatically install LSPs to stdpath for neovim
@@ -109,13 +108,6 @@ lazy.setup({
           end,
         },
       },
-    },
-
-    -- autp pairs
-    {
-      'windwp/nvim-autopairs',
-      event = "InsertEnter",
-      opts = {} -- this is equalent to setup({}) function
     },
   },
 })
