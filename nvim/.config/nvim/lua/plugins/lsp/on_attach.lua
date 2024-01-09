@@ -19,6 +19,8 @@ M.on_attach = function(_, bufnr)
   nmap("gs", vim.lsp.buf.signature_help, "Signature Documentation")
 
   nmap("gD", vim.lsp.buf.declaration, "Goto Declaration")
+
+	nmap("bf", vim.lsp.buf.format, "Buffer Format")
 end
 
 return M
