@@ -1,9 +1,8 @@
 return {
-  -- "RRethy/nvim-base16",
-	"chriskempson/vim-tomorrow-theme",
+  "RRethy/nvim-base16",
   priority = 1000,
   lazy = false,
   config = function()
-    vim.cmd([[colorscheme Tomorrow-Night-Bright]])
+    vim.cmd([[colorscheme base16-tomorrow-night]])
   end,
 }
