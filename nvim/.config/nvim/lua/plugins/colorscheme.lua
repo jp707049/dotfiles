@@ -3,6 +3,6 @@ return {
   priority = 1000,
   lazy = false,
   config = function()
-    vim.cmd([[colorscheme base16-tomorrow-night]])
+    vim.cmd([[colorscheme base16-bright]])
   end,
 }
