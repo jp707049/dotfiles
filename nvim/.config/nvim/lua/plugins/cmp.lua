@@ -53,8 +53,8 @@ return {
         end, { "i", "s" }),
       }),
 			window = {
-        completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered(),
+        completion = cmp.config.window.bordered({border = "none"}),
+        documentation = cmp.config.window.bordered({border = "none"}),
       },
 			sources = {
 				{ name = "nvim_lsp" },
