@@ -39,12 +39,11 @@ return {
 					},
 				},
 				buffers = {
-					path_display = formattedName,
 					previewer = false,
+					path_display = formattedName,
 					initial_mode = "normal",
 					layout_config = {
 						height = 0.4,
-						width = 0.6,
 						prompt_position = "top",
 						preview_cutoff = 120,
 					},
