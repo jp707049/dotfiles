@@ -1,9 +1,9 @@
 return {
-	"Everblush/nvim",
+	"catppuccin/nvim",
 	priority = 1000,
 	lazy = false,
-	name = "everblush",
+	name = "catppuccin",
 	config = function()
-		vim.cmd([[colorscheme everblush]])
+		vim.cmd([[colorscheme catppuccin]])
 	end,
 }

@@ -10,7 +10,7 @@ return {
 	config = function()
 		require("mason").setup()
 		require("mason-lspconfig").setup({
-			ensure_installed = { "lua_ls", "pyright", "clangd" },
+			ensure_installed = { "lua_ls", "pyright", "clangd", "gopls" },
 		})
 
 		require("lspconfig.ui.windows").default_options.border = "single"
