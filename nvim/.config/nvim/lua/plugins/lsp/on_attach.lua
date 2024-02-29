@@ -20,7 +20,7 @@ M.on_attach = function(_, bufnr)
 
 	nmap("gD", vim.lsp.buf.declaration, "Goto Declaration")
 
-	nmap("bf", vim.lsp.buf.format, "Buffer Format")
+	nmap("<leader>bf", vim.lsp.buf.format, "Buffer Format")
 end
 
 return M
