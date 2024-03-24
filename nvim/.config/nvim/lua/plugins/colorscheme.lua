@@ -1,8 +1,9 @@
 return {
-	"RRethy/base16-nvim",
+	"catppuccin/nvim",
 	priority = 1000,
 	lazy = false,
+	name = "catppuccin",
 	config = function()
-		vim.cmd([[colorscheme base16-onedark]])
+		vim.cmd([[colorscheme catppuccin-mocha]])
 	end,
 }
