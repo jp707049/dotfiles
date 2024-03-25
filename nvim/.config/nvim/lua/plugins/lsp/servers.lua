@@ -14,8 +14,6 @@ return {
 			},
 		},
 	},
-	pyright = {},
-	clangd = {},
 	gopls = {
 		settings = {
 			gopls = {
@@ -23,5 +21,4 @@ return {
 			},
 		},
 	},
-	zls = {},
 }
