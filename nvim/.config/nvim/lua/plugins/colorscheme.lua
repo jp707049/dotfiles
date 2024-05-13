@@ -1,8 +1,20 @@
+-- return {
+-- 	"RRethy/base16-nvim",
+-- 	priority = 1000,
+-- 	lazy = false,
+-- 	config = function()
+-- 		vim.cmd([[colorscheme base16-gruvbox-dark-hard]])
+-- 	end,
+-- }
+
 return {
-	"RRethy/base16-nvim",
-	priority = 1000,
+	"jesseleite/nvim-noirbuddy",
+	dependencies = {
+		{ "tjdevries/colorbuddy.nvim" }
+	},
 	lazy = false,
-	config = function()
-		vim.cmd([[colorscheme base16-gruvbox-dark-hard]])
-	end,
+	priority = 1000,
+	opts = {
+		preset = "minimal",
+	},
 }

@@ -2,7 +2,7 @@
 startup_mode = "Maximized"
 decorations = "Buttonless"
 opacity = 1.0
-blur = true
+blur = false
 
 [font]
 normal = { family = "NotoSansM Nerd Font", style = "Regular" }
@@ -10,6 +10,7 @@ size = 20.0
 
 # Default colors
 [colors.primary]
+# gruvbox
 # hard contrast background = = '#1d2021'
 background = '#1d2021'
 # soft contrast background = = '#32302f'
@@ -17,6 +18,7 @@ foreground = '#ebdbb2'
 
 # Normal colors
 [colors.normal]
+# gruvbox
 black   = '#1d2021'
 red     = '#cc241d'
 green   = '#98971a'
@@ -28,6 +30,7 @@ white   = '#a89984'
 
 # Bright colors
 [colors.bright]
+# gruvbox
 black   = '#928374'
 red     = '#fb4934'
 green   = '#b8bb26'

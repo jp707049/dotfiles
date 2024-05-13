@@ -8,9 +8,13 @@ return {
 		{ "j-hui/fidget.nvim", opts = {} }
 	},
 	config = function()
-		require("mason").setup()
+		require("mason").setup({
+			ui = {
+				border = "rounded",
+			}
+		})
 		require("mason-lspconfig").setup({
-			ensure_installed = { "lua_ls", "gopls" },
+			ensure_installed = { "lua_ls", },
 		})
 
 		require("lspconfig.ui.windows").default_options.border = "single"
