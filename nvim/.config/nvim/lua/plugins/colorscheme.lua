@@ -8,10 +8,11 @@
 -- }
 
 return {
-	"nyoom-engineering/oxocarbon.nvim",
+	--"nyoom-engineering/oxocarbon.nvim",
+	"scottmckendry/cyberdream.nvim",
 	lazy = false,
 	priority = 1000,
 	config = function ()
-		vim.cmd([[colorscheme oxocarbon]])
+		vim.cmd([[colorscheme cyberdream]])
 	end,
 }
