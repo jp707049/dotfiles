@@ -8,13 +8,10 @@
 -- }
 
 return {
-	"jesseleite/nvim-noirbuddy",
-	dependencies = {
-		{ "tjdevries/colorbuddy.nvim" }
-	},
+	"nyoom-engineering/oxocarbon.nvim",
 	lazy = false,
 	priority = 1000,
-	opts = {
-		preset = "minimal",
-	},
+	config = function ()
+		vim.cmd([[colorscheme oxocarbon]])
+	end,
 }
