@@ -19,6 +19,7 @@ vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.swapfile = false
 vim.opt.laststatus = 0
+vim.opt.cmdheight = 0
 vim.opt.pumheight = 10
 vim.opt.updatetime = 200
 vim.opt.scrolloff = 8
