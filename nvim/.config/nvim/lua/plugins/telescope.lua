@@ -4,19 +4,19 @@ return {
 	lazy = true,
 	keys = {
 		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
-		{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Find Buffers" },
+		{ "<leader>fb", "<cmd>Telescope buffers<cr>",    desc = "Find Buffers" },
 	},
 	config = function()
 		local telescope = require("telescope")
 
 		local function formattedName(_, path)
-      local tail = vim.fs.basename(path)
-      local parent = vim.fs.dirname(path)
-      if parent == "." then
-        return tail
-      end
-      return string.format("%s\t\t%s", tail, parent)
-    end
+			local tail = vim.fs.basename(path)
+			local parent = vim.fs.dirname(path)
+			if parent == "." then
+				return tail
+			end
+			return string.format("%s\t\t%s", tail, parent)
+		end
 
 		telescope.setup({
 			file_ignore_patterns = { "%.git/." },
