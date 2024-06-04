@@ -9,39 +9,26 @@ option_as_alt = "Both"
 normal = { family = "NotoSansM Nerd Font", style = "Regular" }
 size = 20.0
 
-# cyberdream theme for alacritty
-[[colors.indexed_colors]]
-color = "0xffbd5e"
-index = 16
-
-[[colors.indexed_colors]]
-color = "0xff6e5e"
-index = 17
-
-[colors.bright]
-black = "0x3c4048"
-blue = "0x5ea1ff"
-cyan = "0x5ef1ff"
-green = "0x5eff6c"
-magenta = "0xbd5eff"
-red = "0xff6e5e"
-white = "0xffffff"
-yellow = "0xf1ff5e"
+[colors.primary]
+background = "#2d353b"
+foreground = "#d3c6aa"
 
 [colors.normal]
-black = "0x16181a"
-blue = "0x5ea1ff"
-cyan = "0x5ef1ff"
-green = "0x5eff6c"
-magenta = "0xbd5eff"
-red = "0xff6e5e"
-white = "0xffffff"
-yellow = "0xf1ff5e"
+black = "#475258"
+red = "#e67e80"
+green = "#a7c080"
+yellow = "#dbbc7f"
+blue = "#7fbbb3"
+magenta = "#d699b6"
+cyan = "#83c092"
+white = "#d3c6aa"
 
-[colors.primary]
-background = "0x16181a"
-foreground = "0xffffff"
-
-[colors.selection]
-background = "0x3c4048"
-foreground = "0xffffff"
+[colors.bright]
+black = "#475258"
+red = "#e67e80"
+green = "#a7c080"
+yellow = "#dbbc7f"
+blue = "#7fbbb3"
+magenta = "#d699b6"
+cyan = "#83c092"
+white = "#d3c6aa"
