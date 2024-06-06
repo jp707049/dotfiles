@@ -261,30 +261,31 @@ session_serialization false
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
 themes {
-    oxocarbon {
-        fg 255 255 255
-        bg 22 22 22
-        red 238 83 150
-        green 66 190 101
-        yellow 255 233 123
-        blue 51 177 255
-        magenta 255 126 182
-        orange 255 133 53
-        cyan 61 219 217
-        black 38 38 38
-        white 211 225 230
+    everforest {
+        bg 43 51 57
+        fg 211 198 170
+        black 75 86 92
+        red 230 126 128
+        green 167 192 128
+        yellow 219 188 127
+        blue 127 187 179
+        magenta 214 153 182
+        cyan 131 192 146
+        white 211 198 170
+        orange 255 158 100
     }
 }
+
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "oxocarbon"
+theme "everforest"
 
 // The name of the default layout to load on startup
 // Default: "default"
 //
-// default_layout "default"
+default_layout "compact"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
