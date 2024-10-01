@@ -1,34 +1,29 @@
+[env]
+TERM = "alacritty"
+
 [window]
+opacity = 1.0
 startup_mode = "Maximized"
 decorations = "Buttonless"
-opacity = 1.0
+padding = { x = 20, y = 20 }
 blur = false
 option_as_alt = "Both"
+
 
 [font]
 normal = { family = "NotoSansM Nerd Font", style = "Regular" }
 size = 20.0
 
 [colors.primary]
-background = "#2d353b"
-foreground = "#d3c6aa"
+background = "#272b30"
+foreground = "#afb4c3"
 
 [colors.normal]
-black = "#475258"
-red = "#e67e80"
-green = "#a7c080"
-yellow = "#dbbc7f"
-blue = "#7fbbb3"
-magenta = "#d699b6"
-cyan = "#83c092"
-white = "#d3c6aa"
-
-[colors.bright]
-black = "#475258"
-red = "#e67e80"
-green = "#a7c080"
-yellow = "#dbbc7f"
-blue = "#7fbbb3"
-magenta = "#d699b6"
-cyan = "#83c092"
-white = "#d3c6aa"
+black = "#272b30"
+red = "#cc6666"
+green = "#bdb968"
+yellow = "#f0c674"
+blue = "#81a2be"
+magenta = "#b08cba"
+cyan = "#7fb2c8"
+white = "#afb4c3"

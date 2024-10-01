@@ -261,26 +261,25 @@ session_serialization false
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
 themes {
-    everforest {
-        bg 43 51 57
-        fg 211 198 170
-        black 75 86 92
-        red 230 126 128
-        green 167 192 128
-        yellow 219 188 127
-        blue 127 187 179
-        magenta 214 153 182
-        cyan 131 192 146
-        white 211 198 170
-        orange 255 158 100
+    default {
+        fg "#afb4c3"
+        bg "#272b30"
+        black "#272b30"
+        red "#cc6666"
+        green "#bdb968"
+        yellow "#f0c674"
+        blue "#81a2be"
+        magenta "#b08cba"
+        cyan "#7fb2c8"
+        white "#afb4c3"
+        orange "#de935f"
     }
 }
-
 
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "everforest"
+theme "default"
 
 // The name of the default layout to load on startup
 // Default: "default"
@@ -317,7 +316,7 @@ mouse_mode true
 //
 // copy_command "xclip -selection clipboard" // x11
 // copy_command "wl-copy"                    // wayland
-// copy_command "pbcopy"                     // osx
+copy_command "pbcopy"                     // osx
 
 // Choose the destination for copied text
 // Allows using the primary selection buffer (on x11/wayland) instead of the system clipboard.
@@ -326,7 +325,7 @@ mouse_mode true
 //   - system (default)
 //   - primary
 //
-// copy_clipboard "primary"
+copy_clipboard "system"
 
 // Enable or disable automatic copy (and clear) of selection when releasing mouse
 // Default: true
