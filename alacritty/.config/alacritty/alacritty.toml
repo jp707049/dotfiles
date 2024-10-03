@@ -5,14 +5,14 @@ TERM = "alacritty"
 opacity = 1.0
 startup_mode = "Maximized"
 decorations = "Buttonless"
-padding = { x = 20, y = 20 }
+padding = { x = 10, y = 10 }
 blur = false
 option_as_alt = "Both"
 
 
 [font]
 normal = { family = "NotoSansM Nerd Font", style = "Regular" }
-size = 20.0
+size = 18.0
 
 [colors.primary]
 background = "#272b30"
