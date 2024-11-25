@@ -1,11 +1,11 @@
--- return {
--- 	"sainnhe/everforest",
--- 	priority = 1000,
--- 	lazy = false,
--- 	config = function()
--- 		vim.cmd([[colorscheme everforest]])
--- 	end,
--- }
+return {
+	"sainnhe/everforest",
+	priority = 1000,
+	lazy = false,
+	config = function()
+		vim.cmd([[colorscheme everforest]])
+	end,
+}
 
 -- return {
 -- 	--"nyoom-engineering/oxocarbon.nvim",
@@ -17,11 +17,11 @@
 -- 	end,
 -- }
 
-return {
-	"ellisonleao/gruvbox.nvim",
-	lazy = false,
-	priority = 1000,
-	config = function ()
-		vim.cmd([[colorscheme gruvbox]])
-	end,
-}
+-- return {
+-- 	"ellisonleao/gruvbox.nvim",
+-- 	lazy = false,
+-- 	priority = 1000,
+-- 	config = function ()
+-- 		vim.cmd([[colorscheme gruvbox]])
+-- 	end,
+-- }

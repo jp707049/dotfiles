@@ -23,4 +23,5 @@ return {
 	},
 	rust_analyzer = {},
 	clangd = {},
+	pyright = {},
 }
