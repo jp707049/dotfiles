@@ -31,6 +31,7 @@ font-feature = -calt # disable ligatures
 # Cursor
 cursor-style = block
 cursor-style-blink = false
+shell-integration-features = no-cursor
 
 # Window
 window-decoration = true
