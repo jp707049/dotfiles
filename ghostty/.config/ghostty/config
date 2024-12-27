@@ -23,6 +23,7 @@ selection-foreground = 1d2021
 
 # Font
 font-size = 18
+font-family = "JetBrains Mono"
 font-style-bold = false
 font-style-italic = false
 font-style-bold-italic = false
