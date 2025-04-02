@@ -11,7 +11,7 @@ vim.g.have_nerd_font = false
 vim.o.winborder = 'rounded'
 
 -- auto compelte
-vim.o.completeopt = 'menuone,noinsert,popup'
+vim.o.completeopt = 'menu,noinsert,popup,fuzzy'
 
 -- Make line numbers default
 vim.opt.number = true
@@ -113,7 +113,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 -- [[ LSP ]]
-vim.lsp.enable({'clangd'})
+vim.lsp.enable({'clangd', 'lua_ls'})
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
