@@ -1,6 +1,10 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.o.winborder = 'rounded'
+
+vim.o.completeopt = 'menu,noinsert,popup,fuzzy'
+
 vim.opt.number = true
 
 vim.opt.mouse = 'a'
