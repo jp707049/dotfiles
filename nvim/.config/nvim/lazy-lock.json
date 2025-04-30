@@ -1,8 +1,8 @@
 {
-  "gitsigns.nvim": { "branch": "main", "commit": "9cd665f46ab7af2e49d140d328b8e72ea1cf511b" },
-  "gruber-darker.nvim": { "branch": "main", "commit": "a2dda61d9c1225e16951a51d6b89795b0ac35cd6" },
+  "gitsigns.nvim": { "branch": "main", "commit": "ee28ba3e70ecea811b8f6d7b51d81976e94b121c" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "lualine.nvim": { "branch": "master", "commit": "15884cee63a8c205334ab13ab1c891cd4d27101a" },
-  "nvim-treesitter": { "branch": "master", "commit": "3b308861a8d7d7bfbe9be51d52e54dcfd9fe3d38" },
+  "nightfox.nvim": { "branch": "main", "commit": "ba47d4b4c5ec308718641ba7402c143836f35aa9" },
+  "nvim-treesitter": { "branch": "master", "commit": "94ea4f436d2b59c80f02e293466c374584f03b8c" },
   "nvim-web-devicons": { "branch": "master", "commit": "50b5b06bff13a9b4eab946de7c7033649a6618a1" }
 }

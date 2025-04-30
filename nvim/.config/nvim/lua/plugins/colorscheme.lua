@@ -1,8 +1,17 @@
+-- return {
+--   "blazkowolf/gruber-darker.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     vim.cmd([[colorscheme gruber-darker]])
+--   end,
+-- }
+
 return {
-  "blazkowolf/gruber-darker.nvim",
+  'EdenEast/nightfox.nvim',
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd([[colorscheme gruber-darker]])
+    vim.cmd([[colorscheme carbonfox]])
   end,
 }
