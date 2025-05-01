@@ -15,7 +15,20 @@ return {
     Lua = {
       runtime = {
         version = 'LuaJIT',
-      }
+      },
+      diagnostics = {
+        -- Get the language server to recognize the `vim` global, etc.
+        globals = {
+          'vim',
+          'describe',
+          'it',
+          'assert',
+          'stub',
+        },
+        disable = {
+          'duplicate-set-field',
+        },
+      },
     }
   }
 }
