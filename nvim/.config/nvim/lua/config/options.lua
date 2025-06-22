@@ -32,3 +32,5 @@ vim.opt.scrolloff = 10
 vim.opt.confirm = true
 
 vim.o.cmdheight = 0
+
+vim.o.guicursor = ''
