@@ -3,7 +3,7 @@ vim.g.maplocalleader = ' '
 
 vim.o.winborder = 'rounded'
 
-vim.o.completeopt = 'menu,noinsert,popup,fuzzy'
+vim.opt.completeopt = { "menuone", "noselect" }
 
 vim.opt.number = true
 
