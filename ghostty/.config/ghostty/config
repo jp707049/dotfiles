@@ -22,7 +22,7 @@ macos-titlebar-style = tabs
 window-height = 100
 window-width = 300
 background-blur = true
-background-opacity = 0.8
+background-opacity = 0.92
 
 # Misc
 macos-option-as-alt = true
