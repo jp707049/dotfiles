@@ -9,8 +9,10 @@ font-style-bold-italic = false
 font-feature = -calt # disable ligatures
 
 # Cursor
-cursor-style = block
+cursor-style = bar
 cursor-style-blink = false
+adjust-cursor-thickness = 2
+adjust-cursor-height = -5
 shell-integration-features = no-cursor
 
 # Window
