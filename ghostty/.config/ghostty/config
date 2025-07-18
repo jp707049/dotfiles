@@ -9,7 +9,7 @@ font-style-bold-italic = false
 font-feature = -calt # disable ligatures
 
 # Cursor
-cursor-style = bar
+cursor-style = block
 cursor-style-blink = false
 adjust-cursor-thickness = 2
 adjust-cursor-height = -5
@@ -23,8 +23,8 @@ window-padding-balance = true
 macos-titlebar-style = tabs
 window-height = 100
 window-width = 300
-background-blur = true
-background-opacity = 0.92
+background-blur = false
+background-opacity = 1.0
 
 # Misc
 macos-option-as-alt = true
