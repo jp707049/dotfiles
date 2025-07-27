@@ -2,6 +2,10 @@
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+-- jj and kk to switch to normal mode
+vim.keymap.set("i", "jj", "<Esc>", { desc = "Switch back to normal mode" })
+vim.keymap.set("i", "kk", "<Esc>", { desc = "Switch back to normal mode" })
+
 -- <leader><leader> toggles between buffers
 vim.keymap.set('n', '<leader><leader>', '<c-^>', { desc = 'Toggles between buffers' })
 

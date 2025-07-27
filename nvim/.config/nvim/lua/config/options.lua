@@ -1,22 +1,22 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
-vim.o.winborder = 'rounded'
+vim.o.winborder = "rounded"
 
 vim.opt.completeopt = { "menuone", "noselect" }
 
 vim.opt.number = true
 
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
 vim.opt.showmode = false
 
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 250
 
@@ -33,4 +33,4 @@ vim.opt.confirm = true
 
 vim.o.cmdheight = 0
 
-vim.o.guicursor = ''
+vim.o.guicursor = ""
