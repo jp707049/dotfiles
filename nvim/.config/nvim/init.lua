@@ -1,12 +1,21 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.signcolumn = "yes"
 vim.o.termguicolors = true
 vim.o.wrap = false
 vim.o.swapfile = false
-vim.g.mapleader = " "
 vim.o.winborder = "rounded"
 vim.o.clipboard = "unnamedplus"
+vim.opt.completeopt = { "menuone", "noselect" }
+vim.opt.showmode = false
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.o.cmdheight = 0
+vim.o.guicursor = ""
 
 vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>")
 vim.keymap.set("n", "<leader>w", ":write<CR>")
@@ -32,6 +41,7 @@ vim.pack.add({
   { src = "https://github.com/neovim/nvim-lspconfig" },
   { src = "https://github.com/ibhagwan/fzf-lua" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
+  { src = "https://github.com/nvim-lualine/lualine.nvim" },
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
@@ -42,7 +52,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
       end
     end,
 })
-vim.cmd("set completeopt+=noselect")
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
@@ -74,6 +83,13 @@ require("gitsigns").setup({
     delete = { text = "┃" },
     topdelete = { text = "┃" },
     changedelete = { text = "┃" },
+  },
+})
+
+require("lualine").setup({
+  options = {
+    component_separators = { left = ' ', right = ' '},
+    section_separators = { left = ' ', right = ' '},
   },
 })
 
