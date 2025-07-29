@@ -12,7 +12,7 @@ font-feature = -calt # disable ligatures
 cursor-style = block
 cursor-style-blink = false
 adjust-cursor-thickness = 2
-adjust-cursor-height = -5
+adjust-cursor-height = -1
 shell-integration-features = no-cursor
 
 # Window
