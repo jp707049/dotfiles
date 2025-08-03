@@ -97,10 +97,4 @@ require("lualine").setup({
   },
 })
 
-require('kanagawa').setup({
-  theme = "dragon",
-  background = {
-    dark = "dragon",
-  },
-})
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme kanagawa-dragon")
