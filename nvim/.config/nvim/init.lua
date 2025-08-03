@@ -37,6 +37,7 @@ vim.keymap.set("n", "<leader>fb", function() require("fzf-lua").buffers() end, {
 
 vim.pack.add({
   { src = "https://github.com/chriskempson/vim-tomorrow-theme" },
+  { src = "https://github.com/rebelot/kanagawa.nvim" },
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
   { src = "https://github.com/neovim/nvim-lspconfig" },
   { src = "https://github.com/ibhagwan/fzf-lua" },
@@ -96,4 +97,10 @@ require("lualine").setup({
   },
 })
 
-vim.cmd("colorscheme Tomorrow-Night-Bright")
+require('kanagawa').setup({
+  theme = "dragon",
+  background = {
+    dark = "dragon",
+  },
+})
+vim.cmd("colorscheme kanagawa")
