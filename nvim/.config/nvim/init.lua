@@ -39,12 +39,13 @@ vim.pack.add({
   { src = "https://github.com/chriskempson/vim-tomorrow-theme" },
   { src = "https://github.com/rebelot/kanagawa.nvim" },
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
-  { src = "https://github.com/neovim/nvim-lspconfig" },
+  { src = "https://github.com/mason-org/mason.nvim" },
   { src = "https://github.com/ibhagwan/fzf-lua" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
   { src = "https://github.com/nvim-lualine/lualine.nvim" },
 })
 
+require("mason").setup()
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(ev)
     local client = vim.lsp.get_client_by_id(ev.data.client_id)
@@ -63,11 +64,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   callback = function()
     vim.highlight.on_yank()
   end,
-})
-
-require "nvim-treesitter.configs".setup({
-  ensure_installed = { "zig" },
-  highlight = { enable = true }
 })
 
 require("fzf-lua").setup({
