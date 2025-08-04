@@ -49,10 +49,10 @@ require("mason").setup()
 vim.api.nvim_create_autocmd("LspAttach", {
   callback = function(ev)
     local client = vim.lsp.get_client_by_id(ev.data.client_id)
-      if client:supports_method("textDocument/completion") then
-	vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = true })
-      end
-    end,
+    if client:supports_method("textDocument/completion") then
+      vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = true })
+    end
+  end,
 })
 
 -- Highlight when yanking (copying) text
@@ -71,7 +71,7 @@ require("fzf-lua").setup({
 })
 
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format)
-vim.lsp.enable({ "lua_ls", "zls" })
+vim.lsp.enable({ "lua_ls", "zls", "rust_analyzer", "pyright" })
 
 require("gitsigns").setup({
   signs = {
@@ -85,8 +85,8 @@ require("gitsigns").setup({
 
 require("lualine").setup({
   options = {
-    component_separators = { left = ' ', right = ' '},
-    section_separators = { left = ' ', right = ' '},
+    component_separators = { left = ' ', right = ' ' },
+    section_separators = { left = ' ', right = ' ' },
   },
   sections = {
     lualine_b = {},
