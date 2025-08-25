@@ -35,25 +35,8 @@ vim.keymap.set("n", "<leader><leader>", "<c-^>", { desc = "Toggles between buffe
 vim.keymap.set("n", "<leader>ff", function() require("fzf-lua").files() end, { desc = "Fzf Find Files" })
 vim.keymap.set("n", "<leader>fb", function() require("fzf-lua").buffers() end, { desc = "Fzf Buffers" })
 
-vim.pack.add({
-  { src = "https://github.com/chriskempson/vim-tomorrow-theme" },
-  { src = "https://github.com/rebelot/kanagawa.nvim" },
-  { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
-  { src = "https://github.com/mason-org/mason.nvim" },
-  { src = "https://github.com/ibhagwan/fzf-lua" },
-  { src = "https://github.com/lewis6991/gitsigns.nvim" },
-  { src = "https://github.com/nvim-lualine/lualine.nvim" },
-})
-
-require("mason").setup()
-vim.api.nvim_create_autocmd("LspAttach", {
-  callback = function(ev)
-    local client = vim.lsp.get_client_by_id(ev.data.client_id)
-    if client:supports_method("textDocument/completion") then
-      vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = true })
-    end
-  end,
-})
+-- lsp keymaps
+vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format)
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
@@ -66,11 +49,23 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
+vim.pack.add({
+  { src = "https://github.com/chriskempson/vim-tomorrow-theme" },
+  { src = "https://github.com/rebelot/kanagawa.nvim" },
+  { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+  { src = "https://github.com/mason-org/mason.nvim" },
+  { src = "https://github.com/ibhagwan/fzf-lua" },
+  { src = "https://github.com/lewis6991/gitsigns.nvim" },
+  { src = "https://github.com/nvim-lualine/lualine.nvim" },
+  { src = "https://github.com/numToStr/Comment.nvim" },
+})
+
+require('Comment').setup()
+require("mason").setup()
 require("fzf-lua").setup({
   fzf_colors = { true, }
 })
 
-vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format)
 vim.lsp.enable({ "lua_ls", "zls", "rust_analyzer", "pyright" })
 
 require("gitsigns").setup({
