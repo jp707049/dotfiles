@@ -1,4 +1,4 @@
-theme = "gruvbox_dark_hard"
+theme = "srcery"
 
 [editor]
 line-number = "relative"
