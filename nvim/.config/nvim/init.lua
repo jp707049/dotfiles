@@ -51,7 +51,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 vim.pack.add({
   { src = "https://github.com/chriskempson/vim-tomorrow-theme" },
-  { src = "https://github.com/rebelot/kanagawa.nvim" },
+  { src = "https://github.com/srcery-colors/srcery-vim" },
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
   { src = "https://github.com/mason-org/mason.nvim" },
   { src = "https://github.com/ibhagwan/fzf-lua" },
@@ -88,4 +88,4 @@ require("lualine").setup({
   },
 })
 
-vim.cmd("colorscheme kanagawa-dragon")
+vim.cmd("colorscheme srcery")
