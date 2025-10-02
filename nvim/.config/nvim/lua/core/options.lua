@@ -1,0 +1,20 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.signcolumn = "yes"
+vim.o.termguicolors = true
+vim.o.wrap = false
+vim.o.swapfile = false
+vim.o.winborder = "rounded"
+vim.o.clipboard = "unnamedplus"
+vim.o.cmdheight = 0
+vim.o.guicursor = ""
+vim.opt.showmode = false
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.completeopt = { "menuone", "popup", "noinsert" }
+vim.opt.scrolloff = 7
+
