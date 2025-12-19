@@ -48,6 +48,10 @@
       "rev": "3eaa685c0f425d1d414a87655776e8e1e9a00fda",
       "src": "https://github.com/srcery-colors/srcery-vim"
     },
+    "tairiki.nvim": {
+      "rev": "1dcce98679d0e22c70cea83e739db9241ce38264",
+      "src": "https://github.com/deparr/tairiki.nvim"
+    },
     "vim-sleuth": {
       "rev": "be69bff86754b1aa5adcbb527d7fcd1635a84080",
       "src": "https://github.com/tpope/vim-sleuth"
