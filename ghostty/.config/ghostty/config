@@ -25,7 +25,7 @@
 theme = "Tomorrow Night"
 
 # Font
-font-size = 18
+font-size = 20
 font-family = "JetBrains Mono"
 font-style-bold = false
 font-style-italic = false
@@ -35,20 +35,14 @@ font-feature = -calt, -liga, -dlig
 # Cursor
 cursor-style = block
 cursor-style-blink = false
-adjust-cursor-thickness = 2
-adjust-cursor-height = -1
 shell-integration-features = no-cursor
 
 # Window
-window-decoration = true
+maximize = true
+window-decoration = false
 window-padding-x = 0
 window-padding-y = 0
-window-padding-balance = true
-macos-titlebar-style = tabs
-window-height = 100
-window-width = 300
-background-blur = false
-background-opacity = 1.0
+window-padding-color = extend-always
 
 # Misc
 macos-option-as-alt = true
