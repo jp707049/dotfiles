@@ -7,7 +7,12 @@ vim.pack.add({
 })
 
 require('tairiki').setup {
-  palette = "dimmed"
+  palette = "dark",
+
+  -- palette definitions are in lua/tairiki/palette
+  colors = function(c)
+    c.bg = "#000000"
+  end,
 }
 
 vim.cmd("colorscheme tairiki")
