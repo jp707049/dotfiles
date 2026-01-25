@@ -14,13 +14,24 @@ require("blink-cmp").setup({
   -- C-e: Hide menu
   -- C-k: Toggle signature help (if signature.enabled = true)
   --
-  -- See :h blink-cmp-config-keymap for defining your own keymap
   keymap = {
     preset = "default",
     ["<Enter>"] = { "accept", "fallback" },
   },
-  -- (Default) Only show the documentation popup when manually triggered
-  completion = { documentation = { auto_show = false } },
+  completion = {
+    menu = {
+      border = "rounded",
+      winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:BlinkCmpMenuSelection,Search:None",
+    },
+    documentation = {
+      auto_show = true,
+      auto_show_delay_ms = 200,
+      window = {
+        border = "rounded",
+        winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
+      },
+    },
+  },
   sources = { default = { "lsp", }, },
   fuzzy = {
     implementation = "rust",
