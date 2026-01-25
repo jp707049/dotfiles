@@ -2,18 +2,13 @@
 --   { src = "https://github.com/srcery-colors/srcery-vim" },
 -- })
 
+-- vim.pack.add({
+--   { src = "https://github.com/deparr/tairiki.nvim" },
+-- })
+
 vim.pack.add({
-  { src = "https://github.com/deparr/tairiki.nvim" },
+  { src = "https://codeberg.org/ficd/ashen.nvim" },
 })
 
-require('tairiki').setup {
-  palette = "dark",
-
-  -- palette definitions are in lua/tairiki/palette
-  colors = function(c)
-    c.bg = "#000000"
-  end,
-}
-
-vim.cmd("colorscheme tairiki")
+vim.cmd("colorscheme ashen")
 
