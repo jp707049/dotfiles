@@ -12,6 +12,10 @@
       "rev": "a999ddca2f629faf8a554a8fff904931935a7b1c",
       "src": "https://github.com/Saghen/blink.cmp"
     },
+    "colorbuddy.nvim": {
+      "rev": "8b968581e5c19d22a861d5f3fe5dbd83394fa681",
+      "src": "https://github.com/tjdevries/colorbuddy.nvim"
+    },
     "fzf-lua": {
       "rev": "1a8b4246538f2b9c3c3debb460262f549fd7b428",
       "src": "https://github.com/ibhagwan/fzf-lua"
@@ -43,6 +47,10 @@
     "nvim-lspconfig": {
       "rev": "a2a277114dbb93e98f04b5087a9b832918b7da15",
       "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-noirbuddy": {
+      "rev": "2a6445c4fd4515b02ae5030164cc62f039a3c19e",
+      "src": "https://github.com/jesseleite/nvim-noirbuddy"
     },
     "nvim-treesitter": {
       "rev": "42fc28ba918343ebfd5565147a42a26580579482",
