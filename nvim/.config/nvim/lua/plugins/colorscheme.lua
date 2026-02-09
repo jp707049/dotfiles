@@ -1,6 +1,11 @@
 vim.pack.add({
-  { src = "https://github.com/EdenEast/nightfox.nvim" },
+  { src = "https://github.com/deparr/tairiki.nvim" },
 })
 
-vim.cmd("colorscheme carbonfox")
+require('tairiki').setup {
+  plugins = {
+    all = true,
+  },
+}
+vim.cmd("colorscheme tairiki")
 
