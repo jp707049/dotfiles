@@ -1,11 +1,6 @@
 vim.pack.add({
-  { src = "https://github.com/deparr/tairiki.nvim" },
+  { src = "https://github.com/srcery-colors/srcery-vim" },
 })
 
-require('tairiki').setup {
-  plugins = {
-    all = true,
-  },
-}
-vim.cmd("colorscheme tairiki")
+vim.cmd("colorscheme srcery")
 

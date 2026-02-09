@@ -1,26 +1,32 @@
+# https://github.com/srcery-colors/srcery-terminal/
+
 [colors.primary]
-background = '#151515'
-foreground = '#c5c8c6'
+background = "#1c1b19"
+foreground = "#fce8c3"
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "#fbb829"
 
 [colors.normal]
-black   = '#3b3f4c'
-red     = '#cc6666'
-green   = '#b5bd68'
-yellow  = '#e6c547'
-blue    = '#81a2be'
-magenta = '#b294bb'
-cyan    = '#70c0ba'
-white   = '#c5c8c6'
+black = "#1c1b19"
+red = "#ef2f27"
+green = "#519f50"
+yellow = "#fbb829"
+blue = "#2c78bf"
+magenta = "#e02c6d"
+cyan = "#0aaeb3"
+white = "#baa67f"
 
 [colors.bright]
-black   = '#666666'
-red     = '#cc6666'
-green   = '#b5bd68'
-yellow  = '#e6c547'
-blue    = '#81a2be'
-magenta = '#b294bb'
-cyan    = '#70c0ba'
-white   = '#f5f8f6'
+black = "#918175"
+red = "#f75341"
+green = "#98bc37"
+yellow = "#fed06e"
+blue = "#68a8e4"
+magenta = "#ff5c8f"
+cyan = "#2be4d0"
+white = "#fce8c3"
 
 [window]
 decorations = "None"
