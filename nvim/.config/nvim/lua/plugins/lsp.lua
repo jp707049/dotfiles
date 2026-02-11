@@ -13,6 +13,7 @@ require("mason-tool-installer").setup({
     "clangd",
     "pyright",
     "rust_analyzer",
+    "gopls",
   },
 })
 
