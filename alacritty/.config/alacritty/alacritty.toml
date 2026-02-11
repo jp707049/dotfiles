@@ -1,32 +1,35 @@
-# https://github.com/srcery-colors/srcery-terminal/
-
+# Colors - https://github.com/olimorris/onedarkpro.nvim
 [colors.primary]
-background = "#1c1b19"
-foreground = "#fce8c3"
-
-[colors.cursor]
-text = "CellBackground"
-cursor = "#fbb829"
+background  = "#282c34"
+foreground  = "#abb2bf"
 
 [colors.normal]
-black = "#1c1b19"
-red = "#ef2f27"
-green = "#519f50"
-yellow = "#fbb829"
-blue = "#2c78bf"
-magenta = "#e02c6d"
-cyan = "#0aaeb3"
-white = "#baa67f"
+black       = "#282c34"
+red         = "#ef596f"
+green       = "#89ca78"
+yellow      = "#e5c07b"
+blue        = "#61afef"
+magenta     = "#d55fde"
+cyan        = "#2bbac5"
+white       = "#abb2bf"
 
 [colors.bright]
-black = "#918175"
-red = "#f75341"
-green = "#98bc37"
-yellow = "#fed06e"
-blue = "#68a8e4"
-magenta = "#ff5c8f"
-cyan = "#2be4d0"
-white = "#fce8c3"
+black       = "#3e4451"
+red         = "#f38897"
+green       = "#a9d89d"
+yellow      = "#edd4a6"
+blue        = "#8fc6f4"
+magenta     = "#e089e7"
+cyan        = "#4bced8"
+white       = "#c8cdd5"
+
+[colors.cursor]
+text        = "CellBackground"
+cursor      = "CellForeground" # syntax-cursor-color
+
+[colors.selection]
+text        = "CellForeground"
+background  = "#5c6370"
 
 [window]
 decorations = "None"

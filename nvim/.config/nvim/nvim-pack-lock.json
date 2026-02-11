@@ -72,6 +72,10 @@
       "rev": "f808500883ffc552b53a421139cc1915955759b7",
       "src": "https://github.com/nyoom-engineering/nyoom.nvim"
     },
+    "onedarkpro.nvim": {
+      "rev": "743bf248cf238a0625f3a204eecefafcf6281a9f",
+      "src": "https://github.com/olimorris/onedarkpro.nvim"
+    },
     "srcery-vim": {
       "rev": "3eaa685c0f425d1d414a87655776e8e1e9a00fda",
       "src": "https://github.com/srcery-colors/srcery-vim"
