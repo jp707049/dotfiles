@@ -18,4 +18,7 @@ vim.opt.splitbelow = true
 vim.opt.completeopt = { "menuone", "popup", "noinsert" }
 vim.opt.scrolloff = 7
 vim.opt.laststatus = 3
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 

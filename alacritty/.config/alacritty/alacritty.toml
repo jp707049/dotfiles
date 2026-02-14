@@ -1,35 +1,73 @@
-# Colors - https://github.com/olimorris/onedarkpro.nvim
+# Kanagawa Dragon Alacritty Colors
+
 [colors.primary]
-background  = "#282c34"
-foreground  = "#abb2bf"
+background = '#181616'
+foreground = '#c5c9c5'
 
 [colors.normal]
-black       = "#282c34"
-red         = "#ef596f"
-green       = "#89ca78"
-yellow      = "#e5c07b"
-blue        = "#61afef"
-magenta     = "#d55fde"
-cyan        = "#2bbac5"
-white       = "#abb2bf"
+black = '#0d0c0c'
+red = '#c4746e'
+green = '#8a9a7b'
+yellow = '#c4b28a'
+blue = '#8ba4b0'
+magenta = '#a292a3'
+cyan = '#8ea4a2'
+white = '#c8c093'
 
 [colors.bright]
-black       = "#3e4451"
-red         = "#f38897"
-green       = "#a9d89d"
-yellow      = "#edd4a6"
-blue        = "#8fc6f4"
-magenta     = "#e089e7"
-cyan        = "#4bced8"
-white       = "#c8cdd5"
-
-[colors.cursor]
-text        = "CellBackground"
-cursor      = "CellForeground" # syntax-cursor-color
+black = '#a6a69c'
+red = '#e46876'
+green = '#87a987'
+yellow = '#e6c384'
+blue = '#7fb4ca'
+magenta = '#938aa9'
+cyan = '#7aa89f'
+white = '#c5c9c5'
 
 [colors.selection]
-text        = "CellForeground"
-background  = "#5c6370"
+background = '#2d4f67'
+foreground = '#c8c093'
+
+[[colors.indexed_colors]]
+index = 16
+color = '#b6927b'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#b98d7b'
+
+# # Colors - https://github.com/olimorris/onedarkpro.nvim
+# [colors.primary]
+# background  = "#282c34"
+# foreground  = "#abb2bf"
+#
+# [colors.normal]
+# black       = "#282c34"
+# red         = "#ef596f"
+# green       = "#89ca78"
+# yellow      = "#e5c07b"
+# blue        = "#61afef"
+# magenta     = "#d55fde"
+# cyan        = "#2bbac5"
+# white       = "#abb2bf"
+#
+# [colors.bright]
+# black       = "#3e4451"
+# red         = "#f38897"
+# green       = "#a9d89d"
+# yellow      = "#edd4a6"
+# blue        = "#8fc6f4"
+# magenta     = "#e089e7"
+# cyan        = "#4bced8"
+# white       = "#c8cdd5"
+#
+# [colors.cursor]
+# text        = "CellBackground"
+# cursor      = "CellForeground" # syntax-cursor-color
+#
+# [colors.selection]
+# text        = "CellForeground"
+# background  = "#5c6370"
 
 [window]
 decorations = "None"
