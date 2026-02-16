@@ -1,7 +1,7 @@
 vim.pack.add({
-  { src = "https://github.com/rebelot/kanagawa.nvim" },
+  { src = "https://github.com/sainnhe/everforest" },
 })
 
--- vim.cmd("colorscheme onedark_vivid")
-vim.cmd("colorscheme kanagawa-dragon")
+vim.g.everforest_background = "hard"
+vim.cmd("colorscheme everforest")
 

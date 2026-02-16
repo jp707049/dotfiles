@@ -20,6 +20,10 @@
       "rev": "8b968581e5c19d22a861d5f3fe5dbd83394fa681",
       "src": "https://github.com/tjdevries/colorbuddy.nvim"
     },
+    "everforest": {
+      "rev": "b03a03148c8b34c24c96960b93da9c8883d11f54",
+      "src": "https://github.com/sainnhe/everforest"
+    },
     "fzf-lua": {
       "rev": "1a8b4246538f2b9c3c3debb460262f549fd7b428",
       "src": "https://github.com/ibhagwan/fzf-lua"
@@ -83,6 +87,10 @@
     "tairiki.nvim": {
       "rev": "1dcce98679d0e22c70cea83e739db9241ce38264",
       "src": "https://github.com/deparr/tairiki.nvim"
+    },
+    "vague.nvim": {
+      "rev": "c1ab4d4891ff3a27deba6a80222d895ac8ffb2e5",
+      "src": "https://github.com/vague-theme/vague.nvim"
     },
     "vim-sleuth": {
       "rev": "be69bff86754b1aa5adcbb527d7fcd1635a84080",
