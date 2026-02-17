@@ -40,7 +40,7 @@ foreground = '#272e33'
 decorations = "None"
 startup_mode = "Maximized"
 option_as_alt = "Both"
-padding = { x = 5, y = 0 }
+padding = { x = 0, y = 0 }
 
 [font]
 normal = { family = "Hack Nerd Font", style = "Regular" }
