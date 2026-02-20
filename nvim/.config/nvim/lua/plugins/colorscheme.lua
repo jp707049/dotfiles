@@ -1,7 +1,6 @@
 vim.pack.add({
-  { src = "https://github.com/sainnhe/everforest" },
+  { src = "https://github.com/catppuccin/nvim" },
 })
 
-vim.g.everforest_background = "hard"
-vim.cmd("colorscheme everforest")
+vim.cmd("colorscheme catppuccin-mocha")
 
