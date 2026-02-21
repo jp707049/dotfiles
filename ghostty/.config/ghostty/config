@@ -1,7 +1,7 @@
-theme = "Carbonfox"
+theme = "Catppuccin Mocha"
 
 # Font
-font-size = 20
+font-size = 18
 font-family = "JetBrains Mono"
 font-style-bold = false
 font-style-italic = false
@@ -15,9 +15,13 @@ shell-integration-features = no-cursor
 
 # Window
 maximize = true
-window-decoration = true
+window-decoration = none
 window-padding-x = 5
 window-padding-y = 0
+
+# opacity
+background-opacity = 0.8
+background-blur = true
 
 # Misc
 macos-option-as-alt = true
