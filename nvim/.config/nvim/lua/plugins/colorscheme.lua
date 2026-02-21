@@ -4,6 +4,9 @@ vim.pack.add({
 
 require("catppuccin").setup({
   transparent_background = true,
+  integrations = {
+    cmp = true,
+  },
 })
 
 vim.cmd("colorscheme catppuccin-mocha")
