@@ -6,6 +6,7 @@ require("core.autocmds")
 -- plugins
 require("plugins.colorscheme")
 require("plugins.lsp")
+require("plugins.fidget")
 require("plugins.blink-cmp")
 require("plugins.treesitter")
 require("plugins.sleuth")
