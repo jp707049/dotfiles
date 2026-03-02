@@ -1,18 +1,6 @@
 vim.pack.add({
-  { src = "https://github.com/catppuccin/nvim" },
+  { src = "https://github.com/alexpasmantier/hubbamax.nvim" },
 })
 
-require("catppuccin").setup({
-  term_colors = true,
-  transparent_background = true,
-  float = {
-    transparent = true,
-    solid = true,
-  },
-  integrations = {
-    cmp = true,
-  },
-})
-
-vim.cmd("colorscheme catppuccin-mocha")
+vim.cmd("colorscheme hubbamax")
 

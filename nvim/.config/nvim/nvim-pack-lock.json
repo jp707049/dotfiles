@@ -40,6 +40,10 @@
       "rev": "a472496e1a4465a2dd574389dcf6cdb29af9bf1b",
       "src": "https://github.com/ellisonleao/gruvbox.nvim"
     },
+    "hubbamax.nvim": {
+      "rev": "c45f568b1018529fe9c1f657806cfd3106df33b7",
+      "src": "https://github.com/alexpasmantier/hubbamax.nvim"
+    },
     "kanagawa.nvim": {
       "rev": "debe91547d7fb1eef34ce26a5106f277fbfdd109",
       "src": "https://github.com/rebelot/kanagawa.nvim"

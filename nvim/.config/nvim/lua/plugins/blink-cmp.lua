@@ -22,19 +22,10 @@ require("blink-cmp").setup({
     documentation = {
       auto_show = true,
       auto_show_delay_ms = 200,
-      window = {
-        winblend = 0,
-      },
-    },
-    menu = {
-      winblend = 0,
     },
   },
   signature = {
     enabled = true,
-    window = {
-      winblend = 0,
-    },
   },
   sources = { default = { "lsp", }, },
   fuzzy = {
