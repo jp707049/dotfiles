@@ -1,6 +1,6 @@
 vim.pack.add({
-  { src = "https://github.com/alexpasmantier/hubbamax.nvim" },
+  { src = "https://github.com/folke/tokyonight.nvim" },
 })
 
-vim.cmd("colorscheme hubbamax")
+vim.cmd("colorscheme tokyonight-night")
 
