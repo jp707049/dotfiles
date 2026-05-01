@@ -1,5 +1,6 @@
 vim.pack.add({
-  { src = "https://github.com/Saghen/blink.cmp", },
+  { src = "https://github.com/saghen/blink.cmp", },
+  { src = "https://github.com/saghen/blink.lib", },
 })
 
 require("blink-cmp").setup({
@@ -29,10 +30,6 @@ require("blink-cmp").setup({
   },
   sources = { default = { "lsp", }, },
   fuzzy = {
-    implementation = "rust",
-    prebuilt_binaries = {
-      download = true,
-      force_version = "v1.7.0",
-    },
+    implementation = "prefer_rust_with_warning",
   },
 })
