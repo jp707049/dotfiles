@@ -21,7 +21,7 @@ require("blink-cmp").setup({
   },
   completion = {
     documentation = {
-      auto_show = true,
+      auto_show = false,
       auto_show_delay_ms = 200,
     },
   },
@@ -30,6 +30,7 @@ require("blink-cmp").setup({
   },
   sources = { default = { "lsp", }, },
   fuzzy = {
-    implementation = "prefer_rust_with_warning",
+    implementation = "rust",
   },
 })
+
