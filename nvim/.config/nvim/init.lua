@@ -11,6 +11,5 @@ require("plugins.blink-cmp")
 require("plugins.sleuth")
 require("plugins.gitsigns")
 require("plugins.lualine")
-require("plugins.comment")
 require("plugins.fzf")
 
