@@ -11,7 +11,6 @@ require("mason-tool-installer").setup({
   ensure_installed = {
     "lua_ls",
     "clangd",
-    "pyright",
     "rust_analyzer",
     "gopls",
   },
