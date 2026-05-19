@@ -38,3 +38,5 @@ vim.lsp.config("lua_ls", {
     },
   },
 })
+
+vim.lsp.enable({ 'clangd', 'lua_ls', 'rust_analyzer', 'pyright' })

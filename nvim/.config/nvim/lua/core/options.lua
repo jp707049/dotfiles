@@ -15,10 +15,9 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
-vim.opt.completeopt = { "menuone", "popup", "noinsert" }
+vim.opt.completeopt = { "menuone", "noselect" }
 vim.opt.scrolloff = 8
 vim.opt.laststatus = 3
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-
