@@ -6,6 +6,7 @@ require("core.autocmds")
 -- plugins
 require("plugins.colorscheme")
 require("plugins.lsp")
+require("plugins.blink")
 require("plugins.fidget")
 require("plugins.sleuth")
 require("plugins.gitsigns")
