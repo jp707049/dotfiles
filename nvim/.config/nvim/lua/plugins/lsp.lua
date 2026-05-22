@@ -12,7 +12,7 @@ require("mason-tool-installer").setup({
     "lua_ls",
     "clangd",
     "rust_analyzer",
-    "gopls",
+    "basedpyright",
   },
 })
 
@@ -39,4 +39,4 @@ vim.lsp.config("lua_ls", {
   },
 })
 
-vim.lsp.enable({ 'clangd', 'lua_ls', 'rust_analyzer', 'pyright' })
+vim.lsp.enable({ 'clangd', 'lua_ls', 'rust_analyzer', 'basedpyright' })
