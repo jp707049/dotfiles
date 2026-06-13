@@ -24,7 +24,7 @@ selection-background = #353331
 selection-foreground = #e2e0df
 
 # Font
-font-size = 18
+font-size = 15
 font-family = "JetBrains Mono"
 font-style-bold = false
 font-style-italic = false
