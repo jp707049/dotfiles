@@ -1,8 +1,5 @@
 # meowsoot — Ghostty theme.
 # https://github.com/marekh19/meowsoot.nvim
-# Auto-generated from lua/meowsoot/palette.lua. Do not edit by hand.
-# See https://ghostty.org/docs/config/reference
-
 palette = 0=#171616
 palette = 1=#e99696
 palette = 2=#98cdaa
@@ -19,42 +16,12 @@ palette = 12=#b5d0e8
 palette = 13=#eec4d9
 palette = 14=#c4e7ee
 palette = 15=#e2e0df
-
 background = #171616
 foreground = #e2e0df
-
 cursor-color = #eaa4c9
 cursor-text  = #171616
-
 selection-background = #353331
 selection-foreground = #e2e0df
-
-# Vague for Ghostty
-# Upstream: https://github.com/vague-theme/vague-ghostty/blob/main/vague
-
-# palette = 0=#252530
-# palette = 1=#d8647e
-# palette = 2=#7fa563
-# palette = 3=#f3be7c
-# palette = 4=#6e94b2
-# palette = 5=#bb9dbd
-# palette = 6=#aeaed1
-# palette = 7=#cdcdcd
-# palette = 8=#606079
-# palette = 9=#e08398
-# palette = 10=#99b782
-# palette = 11=#f5cb96
-# palette = 12=#8ba9c1
-# palette = 13=#c9b1ca
-# palette = 14=#bebeda
-# palette = 15=#d7d7d7
-# background = #141415
-# foreground = #cdcdcd
-# cursor-color = cell-foreground
-# cursor-text = cell-background
-# selection-background = #252530
-# selection-foreground = #cdcdcd
-# split-divider-color = #878787
 
 # Font
 font-size = 18
@@ -73,8 +40,9 @@ shell-integration-features = no-cursor
 maximize = true
 window-decoration = auto
 macos-titlebar-style = tabs
-window-padding-x = 5
+window-padding-x = 0
 window-padding-y = 0
+window-padding-balance = true
 
 # opacity
 background-opacity = 1 
