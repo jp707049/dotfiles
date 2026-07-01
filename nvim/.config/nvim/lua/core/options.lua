@@ -13,7 +13,7 @@ vim.o.mouse = "a"
 vim.o.showmode = false
 
 -- keep current content top + left when splitting
-vim.o.splitright = ture
+vim.o.splitright = true
 vim.o.splitbelow = true
 
 -- sync clipboard between OS and Neovim.
@@ -40,9 +40,8 @@ vim.o.scrolloff = 10
 -- enable true colors
 vim.o.termguicolors = true
 
--- rounded borders
-vim.o.winborder = "rounded"
-
 -- allow virtual text
 vim.diagnostic.config({ virtual_text = true, virtual_lines = false })
 
+-- completion menu
+vim.opt.completeopt = { "menu", "menuone", "noselect", "popup" }

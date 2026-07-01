@@ -1,3 +1,6 @@
-require("mini.statusline").setup ({
-  use_icons = vim.g.have_nerd_font,
-})
+require("lualine").setup {
+  options = {
+    component_separators = { left = "│", right = "│" },
+    section_separators = { left = "", right = "" },
+  },
+}
