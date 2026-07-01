@@ -13,6 +13,10 @@
       "rev": "d235ca0aa6a29546e661a020e2618612acbbffbe",
       "src": "https://github.com/neanias/everforest-nvim"
     },
+    "fff.nvim": {
+      "rev": "e0a9e08a3a6467ebb8d4b2889f1c21c3b36ba3e6",
+      "src": "https://github.com/dmtrKovalenko/fff.nvim"
+    },
     "fidget.nvim": {
       "rev": "6f793b2bcd2d35e201c09520f698bb763220908a",
       "src": "https://github.com/j-hui/fidget.nvim"

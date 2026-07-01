@@ -17,3 +17,8 @@ vim.keymap.set('n', 'N', 'Nzz', { silent = true })
 vim.keymap.set('n', '*', '*zz', { silent = true })
 vim.keymap.set('n', '#', '#zz', { silent = true })
 vim.keymap.set('n', 'g*', 'g*zz', { silent = true })
+
+-- fff
+vim.keymap.set('n', '<leader>ff', function() require('fff').find_files() end, { desc = 'FFFind files' })
+vim.keymap.set('n', '<leader>lg', function() require('fff').live_grep() end, { desc = 'Live content grep' })
+

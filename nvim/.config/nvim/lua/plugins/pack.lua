@@ -8,4 +8,5 @@ vim.pack.add({
   { src = "https://github.com/j-hui/fidget.nvim" },
   { src = "https://github.com/neovim/nvim-lspconfig" },
   { src = "https://github.com/saghen/blink.cmp", version = vim.version.range "1.*" },
+  { src = "https://github.com/dmtrKovalenko/fff.nvim" },
 })
