@@ -1,0 +1,13 @@
+theme = "mellow"
+
+[editor]
+line-number = "relative"
+mouse = true
+
+[editor.cursor-shape]
+insert = "block"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
