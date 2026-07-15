@@ -1,1 +1,1 @@
-vim.cmd.colorscheme("mellow")
+vim.cmd.colorscheme("cyberdream")

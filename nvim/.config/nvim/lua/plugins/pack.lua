@@ -2,6 +2,7 @@ vim.pack.add({
   { src = "https://github.com/NMAC427/guess-indent.nvim" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
   { src = "https://github.com/mellow-theme/mellow.nvim" },
+  { src = "https://github.com/scottmckendry/cyberdream.nvim" },
   { src = "https://github.com/folke/todo-comments.nvim" },
   { src = "https://github.com/nvim-tree/nvim-web-devicons" },
   { src = "https://github.com/nvim-lualine/lualine.nvim" },
