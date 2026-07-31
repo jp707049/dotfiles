@@ -11,6 +11,10 @@ vim.keymap.set("", "L", "$")
 -- <leader><leader> toggles between buffers
 vim.keymap.set("n", "<leader><leader>", "<c-^>")
 
+-- escape from insert mode
+vim.keymap.set("i", "jj", "<Esc>", { silent = true })
+vim.keymap.set("i", "kk", "<Esc>", { silent = true })
+
 -- always center search results
 vim.keymap.set("n", "n", "nzz", { silent = true })
 vim.keymap.set("n", "N", "Nzz", { silent = true })
