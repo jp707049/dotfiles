@@ -1,1 +1,2 @@
-vim.cmd.colorscheme("cyberdream")
+require("meowsoot").setup({ style = "moon" })
+vim.cmd.colorscheme("meowsoot")
