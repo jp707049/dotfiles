@@ -1,2 +1,1 @@
-require("meowsoot").setup({ style = "moon" })
-vim.cmd.colorscheme("meowsoot")
+vim.cmd.colorscheme("base16-gruvbox-dark")

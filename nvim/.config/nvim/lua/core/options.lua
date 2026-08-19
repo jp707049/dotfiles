@@ -45,3 +45,6 @@ vim.diagnostic.config({ virtual_text = true, virtual_lines = false })
 
 -- completion menu
 vim.opt.completeopt = { "menu", "menuone", "noselect", "popup" }
+
+-- rounded border for all
+vim.o.winborder = "rounded"
