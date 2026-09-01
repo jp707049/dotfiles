@@ -1,34 +1,29 @@
-# meowsoot — Ghostty theme.
-# https://github.com/marekh19/meowsoot.nvim
-# Auto-generated from lua/meowsoot/palette.lua. Do not edit by hand.
-# See https://ghostty.org/docs/config/reference
-# palette = 0=#171921
-# palette = 1=#e99696
-# palette = 2=#98cdaa
-# palette = 3=#dfd286
-# palette = 4=#96bddf
-# palette = 5=#eaa4c9
-# palette = 6=#96d8e3
-# palette = 7=#a0a5ba
-# palette = 8=#404454
-# palette = 9=#f0b7b7
-# palette = 10=#badec6
-# palette = 11=#eee7c4
-# palette = 12=#b5d0e8
-# palette = 13=#eec4d9
-# palette = 14=#c4e7ee
-# palette = 15=#d9dbe8
-#
-# background = #171921
-# foreground = #d9dbe8
-#
-# cursor-color = #eaa4c9
-# cursor-text  = #171921
-#
-# selection-background = #353746
-# selection-foreground = #d9dbe8
+background = 2D353B
+foreground = D3C6AA
+cursor-color = D3C6AA
+selection-background = 543A48
+selection-foreground = D3C6AA
 
-theme = "Gruvbox Dark"
+palette = 0=#232A2E
+
+palette = 1=#E67E80
+palette = 2=#A7C080
+palette = 3=#DBBC7F
+palette = 4=#7FBBB3
+palette = 5=#D699B6
+palette = 6=#83C092
+
+palette = 7=#9DA9A0
+palette = 8=#7A8478
+
+palette = 9=#E67E80
+palette = 10=#A7C080
+palette = 11=#DBBC7F
+palette = 12=#7FBBB3
+palette = 13=#D699B6
+palette = 14=#83C092
+
+palette = 15=#D3C6AA
 
 # Font
 font-size = 18

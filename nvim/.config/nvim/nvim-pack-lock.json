@@ -10,7 +10,7 @@
       "version": "1.0.0 - 2.0.0"
     },
     "cyberdream.nvim": {
-      "rev": "a2a2e085575b05d3e50cf89847152f7efda8b153",
+      "rev": "39e1fda12c0704e01029b286a4c7e77e33a0c5cd",
       "src": "https://github.com/scottmckendry/cyberdream.nvim"
     },
     "everforest": {
@@ -22,7 +22,7 @@
       "src": "https://github.com/neanias/everforest-nvim"
     },
     "fff.nvim": {
-      "rev": "611dd873a396abeee5417953fe1365d9da2399e9",
+      "rev": "973c859cf98456f81a16e1eeac1b342c463647c0",
       "src": "https://github.com/dmtrKovalenko/fff.nvim"
     },
     "fidget.nvim": {
@@ -54,7 +54,7 @@
       "src": "https://github.com/marekh19/meowsoot.nvim"
     },
     "mini.nvim": {
-      "rev": "e58ad4b0c9e9376096b9704f98fc00d4c9448870",
+      "rev": "fb2bbae327f3c306f3c825031345b89dd176ce60",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.pairs": {
@@ -62,7 +62,7 @@
       "src": "https://github.com/nvim-mini/mini.pairs"
     },
     "nvim-lspconfig": {
-      "rev": "fbaef6156f9ad65790931ab543ab1dfec57bbec7",
+      "rev": "684cb45c2faa24ce463b4fe9aaf011bfe1e0fb26",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-web-devicons": {

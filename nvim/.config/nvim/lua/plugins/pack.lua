@@ -1,6 +1,7 @@
 vim.pack.add({
   { src = "https://github.com/marekh19/meowsoot.nvim"},
   { src = "https://github.com/RRethy/base16-nvim" },
+  { src = "https://github.com/sainnhe/everforest" },
   { src = "https://github.com/NMAC427/guess-indent.nvim" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
   { src = "https://github.com/folke/todo-comments.nvim" },
