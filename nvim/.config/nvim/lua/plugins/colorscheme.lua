@@ -1,1 +1,1 @@
-vim.cmd.colorscheme("everforest")
+vim.cmd.colorscheme("base16-gruvbox-dark-hard")
