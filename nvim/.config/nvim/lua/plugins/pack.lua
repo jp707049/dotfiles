@@ -9,5 +9,4 @@ vim.pack.add({
   { src = "https://github.com/neovim/nvim-lspconfig" },
   { src = "https://github.com/saghen/blink.cmp", version = vim.version.range "1.*" },
   { src = "https://github.com/dmtrKovalenko/fff.nvim" },
-  { src = "https://github.com/nvim-mini/mini.pairs" },
 })
