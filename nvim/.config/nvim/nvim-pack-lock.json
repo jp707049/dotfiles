@@ -1,7 +1,7 @@
 {
   "plugins": {
     "avante.nvim": {
-      "rev": "0def14bce856ae25b878890d36d3ba547f27a0dc",
+      "rev": "f677f357241c8345a898b540270f303c8e8fa4d9",
       "src": "https://github.com/yetone/avante.nvim"
     },
     "base16-nvim": {
@@ -26,7 +26,7 @@
       "src": "https://github.com/neanias/everforest-nvim"
     },
     "fff.nvim": {
-      "rev": "4083ea04d30537aaa653a2189616ab6b4ff19810",
+      "rev": "6b46693c8c6442877a3ee078955d0c36eaff4625",
       "src": "https://github.com/dmtrKovalenko/fff.nvim"
     },
     "fidget.nvim": {
@@ -38,7 +38,7 @@
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "gruvbox": {
-      "rev": "5d15b2765f59754d7ac263c88a0f6e3e58124951",
+      "rev": "ef8864bb42bf244f0295d1c5a403b27e3d139695",
       "src": "https://github.com/morhetz/gruvbox"
     },
     "gruvbox.nvim": {
@@ -66,7 +66,7 @@
       "src": "https://github.com/marekh19/meowsoot.nvim"
     },
     "mini.nvim": {
-      "rev": "ac5dffcc52b8378fbb15efeb0497a83e57a0b01c",
+      "rev": "4389a4f31f854ce066949ea89c72dc71564f5c20",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.pairs": {
@@ -78,7 +78,7 @@
       "src": "https://github.com/MunifTanjim/nui.nvim"
     },
     "nvim-lspconfig": {
-      "rev": "98e5981d14057a54cd49a35fb280dfd275ff65f8",
+      "rev": "ffd261c09c3dabd0bf1a438f47a8ae3b22f3c3ff",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-web-devicons": {
