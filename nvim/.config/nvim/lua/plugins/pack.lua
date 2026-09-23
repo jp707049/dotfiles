@@ -1,6 +1,6 @@
 vim.pack.add({
   { src = "https://github.com/RRethy/base16-nvim" },
-  { src = "https://github.com/vague-theme/vague.nvim" },
+  { src = "https://github.com/Aejkatappaja/cendre" },
   { src = "https://github.com/NMAC427/guess-indent.nvim" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
   { src = "https://github.com/folke/todo-comments.nvim" },
