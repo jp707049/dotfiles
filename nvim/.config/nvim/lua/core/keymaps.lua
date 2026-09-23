@@ -25,3 +25,11 @@ vim.keymap.set("n", "g*", "g*zz", { silent = true })
 -- fff
 vim.keymap.set("n", "<leader>ff", function() require("fff").find_files() end, { desc = "FFFind files" })
 vim.keymap.set("n", "<leader>lg", function() require("fff").live_grep() end, { desc = "Live content grep" })
+
+-- lsp format
+vim.keymap.set("n", "<leader>fb",
+  function()
+    vim.lsp.buf.format({ async = true })
+  end,
+  { desc = "LSP Format buffer" }
+)
