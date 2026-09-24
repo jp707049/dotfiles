@@ -1,3 +1,2 @@
 [skin]
-name = "gruvbox-dark"
-background = true
+background = false

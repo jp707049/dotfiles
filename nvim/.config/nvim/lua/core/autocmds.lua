@@ -16,7 +16,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
         if vim.api.nvim_buf_is_valid(args.buf) then
           vim.lsp.semantic_tokens.force_refresh(args.buf)
         end
-      end, 500)
+      end, 50)
     end
   end,
 })
