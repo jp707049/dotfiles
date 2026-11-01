@@ -1,5 +1,4 @@
 vim.pack.add({
-  { src = "https://github.com/RRethy/base16-nvim" },
   { src = "https://github.com/Aejkatappaja/cendre" },
   { src = "https://github.com/blazkowolf/gruber-darker.nvim" },
   { src = "https://github.com/NMAC427/guess-indent.nvim" },
@@ -11,4 +10,6 @@ vim.pack.add({
   { src = "https://github.com/neovim/nvim-lspconfig" },
   { src = "https://github.com/saghen/blink.cmp", version = vim.version.range "1.*" },
   { src = "https://github.com/dmtrKovalenko/fff.nvim" },
+  { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+  { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
 })

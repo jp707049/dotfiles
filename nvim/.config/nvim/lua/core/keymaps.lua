@@ -33,3 +33,8 @@ vim.keymap.set("n", "<leader>fb",
   end,
   { desc = "LSP Format buffer" }
 )
+
+-- Render markdown
+-- Toggle rendering only for the current buffer
+vim.keymap.set("n", "<leader>mb", function() require("render-markdown").buf_toggle() end,
+  { desc = "Toggle Markdown Buffer" })
